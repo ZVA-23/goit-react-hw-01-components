@@ -11,10 +11,10 @@ const bgColor = () => {
     Math.round(Math.random() * 255) +
     ',' +
     0.2 +
-    ')';
+    ')'
 
-  return color;
-};
+  return color
+}
 
 export const TransactionHistory = ({ items  }) => {
     return (
@@ -37,7 +37,7 @@ export const TransactionHistory = ({ items  }) => {
             ))}
             </tbody>
         </table>
-  );
+  )
 }
 
 
@@ -50,4 +50,4 @@ TransactionHistory.propTypes = {
       currency: PropTypes.string.isRequired,
     })
   ).isRequired,
-};
+}

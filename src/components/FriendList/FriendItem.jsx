@@ -8,7 +8,7 @@ export const FriendItem = ({ avatar, name, isOnline }) => {
             <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
             <p className={css.name}>{name}</p>
         </>
-    );
+    )
 }
 
 FriendItem.propTypes = {

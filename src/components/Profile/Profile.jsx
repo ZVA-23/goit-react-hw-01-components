@@ -32,8 +32,8 @@ export const Profile = ({ username, tag, location, avatar,
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
@@ -41,4 +41,4 @@ Profile.propTypes = {
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
-};
+}

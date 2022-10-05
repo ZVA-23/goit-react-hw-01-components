@@ -11,10 +11,10 @@ const bgColor = () => {
     Math.round(Math.random() * 255) +
     ',' +
     0.2 +
-    ')';
+    ')'
 
-  return color;
-};
+  return color
+}
 
 export function Statistics({ title, stats }) {
     return (
@@ -31,7 +31,7 @@ export function Statistics({ title, stats }) {
                     )
                 })}
             </ul>
-        </section>);
+        </section>)
 }
 
 Statistics.propTypes = {
@@ -40,6 +40,7 @@ Statistics.propTypes = {
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
-    }).isRequired,)
+    }).isRequired,
+    )
 }
 
