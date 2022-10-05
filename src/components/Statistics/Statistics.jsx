@@ -1,11 +1,20 @@
 import { PropTypes } from 'prop-types';
 import css from './Statistics.module.css';
 
-const bgColor = function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, 0)}`;
-  };
+const bgColor = () => {
+  const color =
+    'rgba(' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    0.2 +
+    ')';
+
+  return color;
+};
 
 export function Statistics({ title, stats }) {
     return (
